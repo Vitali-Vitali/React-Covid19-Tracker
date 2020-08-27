@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Nunito', sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    font-weight: 600;
+}
+
+.container {
+    margin: 0 1em 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 75vh;
+    min-width: 90vw;
+}
+
+.data {
+    background-color: white;
+    min-height: 20em;
+    min-width: 10em;
+    padding: 2em;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    padding: 2em 1em;
+}
+
+.virus{
+    animation: virus 20s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.virusGroup{
+    animation: virusGroup 6s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes virus {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes virusGroup {
+    0% {
+      transform: translateY(0px) rotateZ(0deg);
+    }
+    50% {
+      transform: translateY(10px) scale(0.9) rotateZ(-30deg);
+    }
+    100% {
+        transform: translateY(0px) rotateZ(0deg);
+    }
+}
+
+  
