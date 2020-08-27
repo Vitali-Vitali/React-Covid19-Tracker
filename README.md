@@ -1,3 +1,10 @@
+# React COVID-19 tracker
+
+
+![alt text](https://github.com/Vitali-Vitali/covid19-tracker/blob/master/covid19tracker.png?raw=true)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
